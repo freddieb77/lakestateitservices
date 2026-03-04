@@ -1,0 +1,192 @@
+/* ==========================
+   Root Variables
+========================== */
+:root {
+  --primary: #0F2A3D;
+  --secondary: #2F6F73;
+  --light: #F4F6F7;
+  --gray: #6B7C85;
+  --white: #ffffff;
+  --max-width: 1100px;
+}
+
+/* ==========================
+   Global Reset
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: var(--white);
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================
+   Layout
+========================== */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--secondary);
+  color: var(--white);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--primary);
+}
+
+/* ==========================
+   Header
+========================== */
+header {
+  background: var(--white);
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
+
+/* ==========================
+   Hero
+========================== */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 42, 61, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   Cards
+========================== */
+.card-grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: var(--light);
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+/* ==========================
+   Expandable Drawer
+========================== */
+.drawer-content {
+  display: none;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.drawer-content.active {
+  display: block;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: var(--white);
+  font-size: 18px;
+}
