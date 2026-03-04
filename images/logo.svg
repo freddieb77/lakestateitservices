@@ -1,0 +1,9 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font: 600 22px 'Segoe UI', sans-serif; fill: #0F2A3D; }
+    .sub { font: 400 12px 'Segoe UI', sans-serif; fill: #3A556A; }
+  </style>
+  <text x="0" y="28" class="text">LakeState IT</text>
+  <path d="M0 38 Q60 48 120 38 T240 38" stroke="#2F6F73" stroke-width="3" fill="none"></path>
+  <text x="0" y="55" class="sub">Services</text>
+</svg>
