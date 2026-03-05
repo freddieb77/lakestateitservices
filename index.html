@@ -12,22 +12,32 @@
 <body>
 
   <!-- ================= HEADER ================= -->
-<header>
+<header id="site-header">
   <div class="navbar container">
 
-    <a href="index.html">
+    <a href="index.html" class="logo-link">
       <img src="images/logo.svg" alt="LakeState IT Services Logo" height="40">
     </a>
 
     <!-- Hamburger Button -->
-    <div class="hamburger" id="hamburger">
+    <button 
+      class="hamburger" 
+      id="hamburger"
+      aria-label="Toggle navigation menu"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
     <!-- Navigation -->
-    <nav class="nav-links" id="navLinks">
+    <nav 
+      class="nav-links" 
+      id="primary-navigation"
+      role="navigation"
+    >
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
