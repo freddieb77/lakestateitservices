@@ -196,6 +196,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Style all font awesome icons */
+.fa {
+  padding: 20px; /* Space around the icon */
+  font-size: 30px; /* Icon size */
+  width: 30px; /* Control the clickable area width */
+  text-align: center; /* Center the icon within the width */
+  text-decoration: none; /* Remove default link underline */
+  margin: 5px; /* Space between icons */
+  color: white; /* Default icon color */
+  border-radius: 50%; /* Make them round, remove for square */
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
 /* ==========================
    Sticky Header + Blur
 ========================== */
